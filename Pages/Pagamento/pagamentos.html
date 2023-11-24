@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cobranças</title>
+    <link rel="stylesheet" type="text/css" href="pagamento.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="../Home/home.html" class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="container">
+      <div class="container-fluid">
+        <h1 class="title">Pagamentos</h1>
+        <h4 class="subTittle">Aqui, poderá realizar o cadastro da seu pagamento, assim <br/>
+          como consultar e excluir!</h4>
+      </div>
+
+      
+
+      <div class="space">
+        <h4 class="subTittle">Cadastre aqui!</h4>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Credor" aria-label="Usuário" aria-describedby="basic-addon1">
+        </div>
+  
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Devedor" aria-label="Usuário" aria-describedby="basic-addon1">
+        </div>
+  
+        <div class="input-group mb-3">     
+        <label for="basic-url">Informe o valor do seu pagamento!</label>
+        
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">R$</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Quantia">
+          <div class="input-group-append">
+            <span class="input-group-text">Valor</span>
+          </div>
+        </div>
+      </div>
+  
+      <form>
+        <div class="form-group">
+          <label for="dataNascimento">Data</label>
+          <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
+        </div>
+      </form>
+      
+        <button type="button" class="btn btn-outline-success">Enviar</button>
+    </div>
+    
+    <div class="space2">
+      <h4 class="subTittle">Consulte aqui!</h4>
+
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Informe seu CPF!">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">Senha</label>
+          <input type="password" class="form-control" id="inputPassword2">
+        </div>
+        <button type="button" class="btn btn-outline-warning">Consultar</button>
+      </form>
+    </div>
+
+
+    <div class="space">
+      <ul class="list-group">
+        <li class="list-group-item">Text exemple</li>   
+      </ul>
+    </div>
+    <div class="space">
+      <button type="button" class="btn btn-outline-danger">Excluir</button>
+      <a href="../Home/home.html" class="btn btn-outline-dark">Voltar</a>
+    </div>
+  
+  </div>
+</body>
+</html>
